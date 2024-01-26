@@ -1,0 +1,85 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    background-color: blue;
+}
+
+.dash-row {
+    display: grid;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    height: 2rem;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 8fr;
+    background-color: gray;
+}
+
+.header {
+    display: flex;
+    background-color: aqua;
+}
+
+.search-bar {
+    background-color: wheat;
+    width: 60%;
+}
+
+.header-profile {
+    background-color: aliceblue;
+    width: 40%;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.actions-profile {
+    background-color: pink;
+    width: 40%;
+}
+
+.actions-buttons {
+    background-color: palevioletred;
+    width: 40%;
+}
+
+.panels {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-row: 1 / span 2;
+    background-color: cadetblue;
+}
+
+.announcements {
+    background-color: green;
+}
+
+.trending {
+    background-color: greenyellow;
+}
