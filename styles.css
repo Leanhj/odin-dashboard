@@ -2,6 +2,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+:root {
+    --dark: #020617;
+    --medium: #0f172a;
+    --light: #1e293b;
+}
+
 body {
     margin: 0;
 }
@@ -15,13 +21,13 @@ body {
 .sidebar {
     display: grid;
     grid-template-rows: 2fr 1fr 2fr;
-    background-color: blue;
+    background-color: var(--medium);
 }
 
 .dash-row {
     display: grid;
     width: 100%;
-    background-color: navy;
+    background-color: var(--medium);
     color: white;
     height: 2rem;
     align-items: center;
@@ -30,37 +36,37 @@ body {
 .content {
     display: grid;
     grid-template-rows: 1fr 1fr 8fr;
-    background-color: gray;
+    background-color: var(--dark);
 }
 
 .header {
     display: flex;
-    background-color: aqua;
+    background-color: var(--light);
 }
 
 .search-bar {
-    background-color: wheat;
+    outline: 1px solid wheat;
     width: 60%;
 }
 
 .header-profile {
-    background-color: aliceblue;
+    outline: 1px solid aliceblue;
     width: 40%;
 }
 
 .actions {
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: var(--light);
 }
 
 .actions-profile {
-    background-color: pink;
+    outline: 1px solid pink;
     width: 40%;
 }
 
 .actions-buttons {
-    background-color: palevioletred;
+    outline: 1px solid palevioletred;
     width: 40%;
 }
 
@@ -73,13 +79,13 @@ body {
 .projects {
     display: grid;
     grid-row: 1 / span 2;
-    background-color: cadetblue;
+    outline: 1px solid cadetblue;
 }
 
 .announcements {
-    background-color: green;
+    outline: 1px solid green;
 }
 
 .trending {
-    background-color: greenyellow;
+    outline: 1px solid greenyellow;
 }
