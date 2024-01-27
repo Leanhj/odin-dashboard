@@ -6,6 +6,7 @@
     --dark: #020617;
     --medium: #0f172a;
     --light: #1e293b;
+    --lighter: #64748b;
 }
 
 body {
@@ -45,8 +46,27 @@ body {
 }
 
 .search-bar {
-    outline: 1px solid wheat;
+    /* outline: 1px solid wheat; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     width: 60%;
+}
+
+.search-bar input {
+    width: 80%;
+    height: 1.6rem;
+    background-color: var(--lighter);
+    color: white;
+    appearance: none;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-bar input:focus {
+    outline: none;
 }
 
 .header-profile {
@@ -88,4 +108,9 @@ body {
 
 .trending {
     outline: 1px solid greenyellow;
+}
+
+img {
+    height: 1.6rem;
+    width: 1.6rem;
 }
